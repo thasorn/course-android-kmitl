@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements Dot.onDotChangedL
 
         Bitmap bm = Screenshot.getScreenshot(newDotView);
         File path = Screenshot.getDirectoryName(this);
-        File file = Screenshot.store(bm, "Screenshot.png", path);
+        File file = Screenshot.store(bm, "Screenshot.jpg", path);
         shareImage(file);
 
     }
@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements Dot.onDotChangedL
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
         intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(imageFile));
-        intent.setType("image/jpg");
+        intent.setType("image/*");
         startActivity(Intent.createChooser(intent, "send image"));
 
     }
