@@ -33,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="clearList"
-        android:text="Clear List" />
+        android:text="Clear List"
+        android:background="#a895ff"/>
 
 </LinearLayout>
