@@ -30,10 +30,13 @@
     </RelativeLayout>
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/clearList"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:background="#c6e2ff"
         android:onClick="clearList"
-        android:text="Clear List"
-        android:background="#a895ff"/>
+        android:text="Clear list" />
 
 </LinearLayout>
